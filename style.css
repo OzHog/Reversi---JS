@@ -1,0 +1,188 @@
+body {
+   background-color: #2196F3;
+   margin: 0;
+}
+
+p, h1, h2{
+	cursor: context-menu;
+	margin: 0;
+}
+
+.global-container {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+
+.title {
+   font-size: 40px;
+   color: blue;
+
+}
+
+.cell {
+   height: 40px;
+   width: 40px;
+   background-color: tomato;
+   border-radius: 5px;
+   border: black solid 1px;
+   justify-content: center;
+   align-items: center;
+   display:flex;
+	cursor: context-menu;
+}
+
+.cellhover:hover {
+  cursor:not-allowed;
+}
+
+.board {
+   display: grid;
+   grid-template-columns: 41px 41px 41px 41px 41px 41px 41px 41px 41px 41px;
+   padding: 5px;
+   justify-content: center;
+   grid-gap: 2px;
+
+}
+
+.disc {
+   height: 25px;
+   width: 25px;
+   background-color: black;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+.white {
+   background-color: white;
+}
+
+.black {
+   background-color: black;
+}
+
+.container-statistics {
+   width:100%;
+   border-radius: 20px;
+   background-color: rgb(221, 42, 114);
+   box-shadow: rgba(40, 40, 40, 0.75) 10px 10px 5px 0px;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+   margin-bottom: 10px;
+   padding: 10px;
+}
+
+.x {
+   font-size: 20px;
+   color: blue;
+}
+
+.scoreContainer {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.score {
+   font-size: 20px;
+   color: blue;
+}
+
+.checkbox {
+   user-select: none;
+}
+
+.turnContainer {
+display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.countTurnsContainer {
+   display: flex;
+}
+
+.text {
+   font-size: 20px;
+   color: #84dd1d;
+
+}
+
+.playerScoreContainer {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.player-title {
+   font-size: 20px;
+   color: #5edd77;
+
+}
+
+.playerContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    border: black solid 2px;
+   border-radius: 10%;
+}
+
+.playerInfoContainer {
+	 display: flex;
+	 justify-content: space-around;
+	 align-items: baseline;
+	}
+
+.playersContainer {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 10px;
+
+}
+
+.trainModeContainer {
+   display: flex;
+}
+
+.timeContainer {
+   display: flex;
+
+}
+
+.infoContainer {
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   align-items: baseline;
+}
+
+.generalInfoContainer {
+   display: flex;
+   justify-content: space-around;
+   align-items: baseline;
+   border: black solid 2px;
+   border-radius: 10px;
+   align-items: center;
+}
+
+.new-game-button {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #f14e4e;
+  border: none;
+  border-radius: 15px;
+}
+
+.new-game-button:hover {background-color: #3e8e41}
+
+.new-game-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
